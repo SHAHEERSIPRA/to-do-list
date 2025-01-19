@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background: linear-gradient(rgb(14, 26, 197), rgb(226, 35, 35));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do {
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.to-do img {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.to-do-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do-input {
+    flex-grow: 1;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.add-button {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #28a792;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #2b9482;
+}
+
+.task-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.task-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-list label {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.task-list input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #888;
+}
+ul li.checkbox{
+    color: #888;
+    text-decoration: line-through;
+    
+}
+ul li ::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+
+}
+ul li span {
+    font-size: 16px;
+    color: #c7c7c7;
+    margin-left: 500px;
+}
+ul li span:hover {
+    background-color: #2b9482d3;
+    cursor: pointer;
+    border-radius: 25%;
+}

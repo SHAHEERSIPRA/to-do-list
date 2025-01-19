@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Main container for the to-do list -->
+    <div class="container">
+        <!-- To-do list box -->
+        <div class="to-do">
+            <!-- Header section with title and icon -->
+            <div class="to-do-header">
+                <h2>To Do List</h2>
+                <img src="img/checklist-icon.png" alt="Checklist Icon">
+            </div>
+            <!-- Input section for adding new tasks -->
+            <div class="input-container">
+                <input type="text" class="to-do-input" id="input-box" placeholder="Add a new task">
+                <button class="add-button" onclick="addtask()">Add</button>
+            </div>
+            <!-- Task list section -->
+            <ul class="task-list" id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
